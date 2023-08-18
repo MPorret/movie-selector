@@ -1,15 +1,11 @@
 import Movie from "./Movie";
 
-const Main = ({ data, movieId }) => {
+const Main = ({ movieChosen }) => {
+  const { name, actors, id } = movieChosen;
+
   return (
     <main>
-      {data.map(({ id, name, actors }) => {
-        if (movieId === id) {
-          return <Movie name={name} actors={actors} key={id} />;
-        } else {
-          return null;
-        }
-      })}
+      <Movie name={name} actors={actors} key={id} />;
     </main>
   );
 };

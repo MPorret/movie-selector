@@ -18,7 +18,7 @@ function App() {
       }}
     >
       <Menu data={data} setMovieId={setMovieId} />
-      <Main movieId={movieId} data={data} />
+      {movieChosen && <Main movieChosen={movieChosen} />}
       {!movieChosen && <span>Merci de choisir un film</span>}
     </div>
   );
