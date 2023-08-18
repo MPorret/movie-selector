@@ -5,14 +5,21 @@ import Main from "./components/Main";
 import data from "./assets/data.json";
 
 function App() {
-  const [show, setShow] = useState("");
   const [movieId, setMovieId] = useState("");
 
+  const movieChosen = data.find((movie) => movie.id === movieId);
+  console.log(movieChosen);
+
   return (
-    <div className={show}>
-      <Menu data={data} setShow={setShow} setMovieId={setMovieId} />
+    <div
+      style={{
+        backgroundImage: `url(${movieChosen && movieChosen.background})`,
+        backgroundSize: "cover",
+      }}
+    >
+      <Menu data={data} setMovieId={setMovieId} />
       <Main movieId={movieId} data={data} />
-      {show === "" && <span>Merci de choisir un film</span>}
+      {!movieChosen && <span>Merci de choisir un film</span>}
     </div>
   );
 }

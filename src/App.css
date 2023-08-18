@@ -98,18 +98,3 @@ button:hover {
   background-color: #616161;
   transition: 0.25s;
 }
-
-.harry {
-  background-image: url("https://res.cloudinary.com/lereacteur-apollo/image/upload/v1682675344/apollo/lereacteur/react/Test-technique-react-1/background/Vector_7_wby0kv.png");
-  background-size: cover;
-}
-
-.ring {
-  background-image: url("https://res.cloudinary.com/lereacteur-apollo/image/upload/v1682675571/apollo/lereacteur/react/Test-technique-react-1/background/Vector_8_b9dhra.png");
-  background-size: cover;
-}
-
-.starwars {
-  background-image: url("https://res.cloudinary.com/lereacteur-apollo/image/upload/v1682676952/apollo/lereacteur/react/Test-technique-react-1/background/Vector_11_rzje0r.png");
-  background-size: cover;
-}
